@@ -7,7 +7,7 @@
         border: 1px solid #ccc;
         background-color: #f1f1f1;
         width: 30%;
-        height: 300px;
+        height: 500px;
     }
 
     /* Style the buttons that are used to open the tab content */
@@ -41,7 +41,7 @@
         border: 1px solid #ccc;
         width: 70%;
         border-left: none;
-        height: 300px;
+        height: 500px;
     }
     .elastic button.hide{
         display: none;
