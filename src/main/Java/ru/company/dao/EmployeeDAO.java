@@ -24,6 +24,10 @@ public class EmployeeDAO  {
         String sql = "SELECT * FROM companyguide.employees WHERE FirstName like '%?%'";
         return jdbcTemplate.query(sql, new EmployeeMapper(), name);
     };
+    public  List<Employee> findByDepartment(String code) {
+        String sql = "SELECT * FROM companyguide.employees WHERE CodeDepartment = ?";
+        return jdbcTemplate.query(sql, new EmployeeMapper(), code);
+    };
     public  List<Employee> findAll() {
         String sql = "SELECT * FROM companyguide.employees ";
         return jdbcTemplate.query(sql, new EmployeeMapper());
