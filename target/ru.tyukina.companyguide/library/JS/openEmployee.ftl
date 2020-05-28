@@ -69,6 +69,22 @@
         document.getElementById(itemName).style.display = "block";
         evt.currentTarget.className += " active";
     }
+    
+    function showEmployees(departmentCode) {
+            let xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if(this.readyState == 4 && this.status == 200){
+                    console.log("Result");
+                }
+            }
+            let path  = "/ari/v1/showEmployees/"+ departmentCode;
+            xhttp.open("GET", path, true);
+            xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+           // let body = "code="+departmentCode;
+            xhttp.send();
+
+        
+    }
 
 
 </script>

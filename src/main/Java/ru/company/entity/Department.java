@@ -1,7 +1,5 @@
 package ru.company.entity;
 
-import java.util.List;
-
 public class Department {
      private String departmentName;
      private int departmentCode;

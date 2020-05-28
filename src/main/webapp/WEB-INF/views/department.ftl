@@ -37,6 +37,7 @@
                 <h3>Code department ${department.departmentCode}</h3>
                 <p>Name ${department.departmentName}</p>
                 <p>Department Head ${department.departmentHead}</p>
+                <p><input name="showEmployees" value="Show list of employees" type="button" onclick="showEmployees(${department.departmentCode})"/> </p>
             </div>
         <#else>
             <div id="${department.departmentCode}" class="tabcontent" style="display: none">
@@ -44,6 +45,8 @@
                 <h3>Code department ${department.departmentCode}</h3>
                 <p>Name ${department.departmentName}</p>
                 <p>Department Head ${department.departmentHead}</p>
+                <p><input name="showEmployees" value="Show list of employees" type="button" onclick="showEmployees(${department.departmentCode})"/> </p>
+
             </div>
         </#if>
     </#list>

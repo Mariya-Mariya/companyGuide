@@ -18,5 +18,6 @@ public class GuiedServiceImp implements GuideService {
 
     public List<Department> findAllDepartments(){return departmentDAO.findAll();}
     public List<Employee> findAllEmEmployees (){return  employeeDAO.findAll();}
+    public List<Employee> findByDepartment (String code){return  employeeDAO.findByDepartment(code);}
     public void addEmployee(Employee employee){employeeDAO.add(employee);}
 }
